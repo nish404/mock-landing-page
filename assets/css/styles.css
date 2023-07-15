@@ -222,7 +222,9 @@ img{
 }
 
 /* CHANGE BACKGROUND HEADER */
-
+.scroll-header{
+    background-color: var(--body-color);
+}
 
 /* ACTIVE LINK */
 
@@ -281,13 +283,69 @@ img{
     display: inline-block;
     background-color: var(--black-color);
     color: var(--white-color);
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    transition: 3s;
+}
+
+.button:hover{
+    background-color: var(--black-color-alt);
+}
+
+.button__icon{
+    font-size: 1.2rem;
+}
+
+.button-flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
 }
 
 /*================== SPONSOR ==================*/
+.sponsor__img{
+    width: 90px;
+}
 
+.sponsor__container{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    row-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
 
 /*================== SPECS ==================*/
+.specs__container{
+    position: relative;
+}
 
+.specs__content{
+    row-gap: 1.5rem;
+}
+
+.specs__data{
+    display: grid;
+    row-gap: .25rem;
+}
+
+.specs__icon{
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.specs__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.specs__subtitle{
+    font-size: var(--smaller-font-size);
+}
+
+.specs__data:nth-child(1),
+.specs__data:nth-child(4){
+    margin-left: var(--mb-1-5);
+}
 
 /*================== CASE ==================*/
 
@@ -296,3 +354,12 @@ img{
 
 
 /*================== PRODUCTS ==================*/
+
+
+/*================== FOOTER ==================*/
+
+
+/*================== SCROLL UP ==================*/
+
+
+/* SHOW SCROLL UP */
