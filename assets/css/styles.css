@@ -142,12 +142,73 @@ img{
 }
 
 /*================== HEADER ==================*/
-
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background: transparent;
+}
 
 /*================== NAV ==================*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.nav__logo{
+    display: flex;
+    width: 1.5rem;
+}
+
+.nav__toggle{
+    font-size: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .nav__menu{
+        position: fixed;
+        background-color: var(--body-color);
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0 3rem;
+        transition: .4s;
+    }
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.nav__link{
+    color: var(var(--white-color));
+    font-size: var(--h2-font-size);
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+}
 
 /* SHOW MENU */
 
 
 /* CHANGE BACKGROUND HEADER */
+
+
+/* ACTIVE LINK */
+
+
+/*================== HOME ==================*/
+
+
+/*================== BUTTONS ==================*/
+
+
+/*================== NAV ==================*/
