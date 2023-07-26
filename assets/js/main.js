@@ -38,6 +38,13 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+/*=================== SHOW SCROLL UP ===================*/
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    // WHEN THE SCROLL IS HIGHER THAN 200 VIEWPORT HEIGHT, ADD THE SHOW-SCROLL CLASS TO THE A TAG WITH THE SCROLL-TOP CLASS
+    if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=================== SCROLL SECTIONS ACTIVE LINK ===================*/
 
